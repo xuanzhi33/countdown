@@ -1,0 +1,60 @@
+body,.main:before,.glass:before{
+    background: url("https://tva1.sinaimg.cn/large/00831rSTly1gd8coh7rt0j311y0lcnpd.jpg") 0 / cover fixed;
+}
+.main{
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    width: 350px;
+    height: 600px;
+    line-height: 2;
+    margin: auto;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .6);
+    overflow: hidden;
+}
+.main:before{
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    filter: blur(20px);
+    z-index: -1;
+    margin: -30px;
+}
+.glass{
+    line-height: 2;
+    margin: auto;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .6);
+    overflow: hidden;
+}
+.glass:before{
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    filter: blur(20px);
+    z-index: -1;
+    margin: -30px;
+}
+
+html{
+    cursor:url("http://x-az.top/cur/normal-select-teal.cur"),auto;
+}
+
+a,button{
+    cursor:url("http://x-az.top/cur/link-select.cur"),auto!important;
+}
+
+.form-control{
+    cursor:url("http://x-az.top/cur/txt-selection-teal.cur"),auto;
+}
+
+#login-btn,#signup-btn{
+    cursor:url("http://x-az.top/cur/link-select.cur"),auto;
+}
+
+input[disabled]{
+    cursor:url("http://x-az.top/cur/unavailable-teal.cur"),auto!important;
+}
