@@ -1,5 +1,5 @@
 body,.main:before,.glass:before{
-    background: url("https://tva1.sinaimg.cn/large/00831rSTly1gd8coh7rt0j311y0lcnpd.jpg") 0 / cover fixed;
+    background: url("https://s2.loli.net/2022/06/07/mti4GIwuRUoYe8l.jpg") 0 / cover fixed;
 }
 .main{
     position: absolute;
@@ -37,24 +37,4 @@ body,.main:before,.glass:before{
     filter: blur(20px);
     z-index: -1;
     margin: -30px;
-}
-
-html{
-    cursor:url("http://x-az.top/cur/normal-select-teal.cur"),auto;
-}
-
-a,button{
-    cursor:url("http://x-az.top/cur/link-select.cur"),auto!important;
-}
-
-.form-control{
-    cursor:url("http://x-az.top/cur/txt-selection-teal.cur"),auto;
-}
-
-#login-btn,#signup-btn{
-    cursor:url("http://x-az.top/cur/link-select.cur"),auto;
-}
-
-input[disabled]{
-    cursor:url("http://x-az.top/cur/unavailable-teal.cur"),auto!important;
 }
