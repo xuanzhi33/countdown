@@ -12,8 +12,60 @@
   <title>高考倒计时</title>
   <!-- Bootstrap -->
   <link href="https://unpkg.zhimg.com/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="./x-az.css" rel="stylesheet">
   <style>
+    body,
+    .main:before,
+    .glass:before {
+      background: url("https://s2.loli.net/2022/06/07/mti4GIwuRUoYe8l.jpg") 0 / cover fixed;
+    }
+
+    .main {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 350px;
+      height: 600px;
+      line-height: 2;
+      margin: auto;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, .6);
+      overflow: hidden;
+    }
+
+    .main:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      filter: blur(20px);
+      z-index: -1;
+      margin: -30px;
+    }
+
+    .glass {
+      line-height: 2;
+      margin: auto;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, .6);
+      overflow: hidden;
+    }
+
+    .glass:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      filter: blur(20px);
+      z-index: -1;
+      margin: -30px;
+    }
+
     .time {
       color: gray;
     }
@@ -78,7 +130,7 @@
     }
     getDate();
     setInterval(getDate, 500);
-    
+
     var saying_list = ["人在旅途，难免会遇到荆棘和坎坷，但风雨过后，一定会有美丽的彩虹。",
       "要想改变命运，首先改变自己。",
       "思路决定出路，气度决定高度，细节决定成败，性格决定命运。",
